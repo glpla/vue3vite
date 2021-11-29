@@ -22,7 +22,7 @@ function getJokes() {
   fetch(api).then((res) => {
     return res.json()
   }).then(result => {
-    console.log(result.result);
+    console.log(result);
     jokes.value = result.result
   })
 }
